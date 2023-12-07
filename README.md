@@ -2,13 +2,14 @@
 
 Example app demonstrating the different communication patterns in SwiftUI.
 
+**View Communication Patterns**
+
 - Parent to Distant Child (Custom Environment)
 - Parent to Direct Child
 - Child to Distant Parent (Preference Key)
 - Child to Direct Parent (Callback)
 - Child to Direct Parent (Binding)
 - Between Children
-- View Communication Patterns
 
 ---
 
