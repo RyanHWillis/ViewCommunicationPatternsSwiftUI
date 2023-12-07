@@ -8,6 +8,10 @@ struct ContentView: View {
           ParentToDistantChildView()
         }
 
+        NavigationLink("Parent to Direct Child") {
+          ParentToDirectChildView()
+        }
+
         NavigationLink("Child to Distant Parent (Preference Key)") {
           ChildToDistantParentView()
         }
@@ -20,12 +24,12 @@ struct ContentView: View {
           ChildToDirectParentBindingView()
         }
 
-        NavigationLink("Parent to Direct Child") {
-          ParentToDirectChildView()
-        }
-
         NavigationLink("Between Children") {
           BetweenChildrenView()
+        }
+
+        NavigationLink("Observe Environment Object") {
+          ObserveEnvironmentalObjectView()
         }
       }
       .navigationTitle("View Communication Patterns")

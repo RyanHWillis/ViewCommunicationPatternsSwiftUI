@@ -20,6 +20,7 @@
 		52F645272B2203F5004BD723 /* ChildToDirectParentBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645262B2203F5004BD723 /* ChildToDirectParentBindingView.swift */; };
 		52F645292B2205E2004BD723 /* ParentToDirectChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645282B2205E2004BD723 /* ParentToDirectChildView.swift */; };
 		52F6452B2B2207A6004BD723 /* BetweenChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6452A2B2207A6004BD723 /* BetweenChildrenView.swift */; };
+		52F6452D2B22191E004BD723 /* EnvironmentalObjectShareDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6452C2B22191E004BD723 /* EnvironmentalObjectShareDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		52F645262B2203F5004BD723 /* ChildToDirectParentBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildToDirectParentBindingView.swift; sourceTree = "<group>"; };
 		52F645282B2205E2004BD723 /* ParentToDirectChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentToDirectChildView.swift; sourceTree = "<group>"; };
 		52F6452A2B2207A6004BD723 /* BetweenChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetweenChildrenView.swift; sourceTree = "<group>"; };
+		52F6452C2B22191E004BD723 /* EnvironmentalObjectShareDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalObjectShareDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				52F645262B2203F5004BD723 /* ChildToDirectParentBindingView.swift */,
 				52F645282B2205E2004BD723 /* ParentToDirectChildView.swift */,
 				52F6452A2B2207A6004BD723 /* BetweenChildrenView.swift */,
+				52F6452C2B22191E004BD723 /* EnvironmentalObjectShareDataView.swift */,
 				52F644F92B21D9FA004BD723 /* Assets.xcassets */,
 				52F644FB2B21D9FA004BD723 /* Preview Content */,
 			);
@@ -277,6 +280,7 @@
 			files = (
 				52F644F82B21D9F8004BD723 /* ContentView.swift in Sources */,
 				52F645292B2205E2004BD723 /* ParentToDirectChildView.swift in Sources */,
+				52F6452D2B22191E004BD723 /* EnvironmentalObjectShareDataView.swift in Sources */,
 				52F6452B2B2207A6004BD723 /* BetweenChildrenView.swift in Sources */,
 				52F645272B2203F5004BD723 /* ChildToDirectParentBindingView.swift in Sources */,
 				52F645232B21DFF8004BD723 /* ChildToDistantParentView.swift in Sources */,
