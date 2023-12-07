@@ -14,6 +14,12 @@
 		52F645072B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645062B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUITests.swift */; };
 		52F645112B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645102B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITests.swift */; };
 		52F645132B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645122B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITestsLaunchTests.swift */; };
+		52F645212B21DA3D004BD723 /* ParentToDistantChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645202B21DA3D004BD723 /* ParentToDistantChildView.swift */; };
+		52F645232B21DFF8004BD723 /* ChildToDistantParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645222B21DFF8004BD723 /* ChildToDistantParentView.swift */; };
+		52F645252B220217004BD723 /* ChildToDirectParentCallbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645242B220217004BD723 /* ChildToDirectParentCallbackView.swift */; };
+		52F645272B2203F5004BD723 /* ChildToDirectParentBindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645262B2203F5004BD723 /* ChildToDirectParentBindingView.swift */; };
+		52F645292B2205E2004BD723 /* ParentToDirectChildView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F645282B2205E2004BD723 /* ParentToDirectChildView.swift */; };
+		52F6452B2B2207A6004BD723 /* BetweenChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6452A2B2207A6004BD723 /* BetweenChildrenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		52F6450C2B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewCommunicationPatternsSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F645102B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCommunicationPatternsSwiftUIUITests.swift; sourceTree = "<group>"; };
 		52F645122B21D9FA004BD723 /* ViewCommunicationPatternsSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCommunicationPatternsSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		52F645202B21DA3D004BD723 /* ParentToDistantChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentToDistantChildView.swift; sourceTree = "<group>"; };
+		52F645222B21DFF8004BD723 /* ChildToDistantParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildToDistantParentView.swift; sourceTree = "<group>"; };
+		52F645242B220217004BD723 /* ChildToDirectParentCallbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildToDirectParentCallbackView.swift; sourceTree = "<group>"; };
+		52F645262B2203F5004BD723 /* ChildToDirectParentBindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildToDirectParentBindingView.swift; sourceTree = "<group>"; };
+		52F645282B2205E2004BD723 /* ParentToDirectChildView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentToDirectChildView.swift; sourceTree = "<group>"; };
+		52F6452A2B2207A6004BD723 /* BetweenChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetweenChildrenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 			children = (
 				52F644F52B21D9F8004BD723 /* ViewCommunicationPatternsSwiftUIApp.swift */,
 				52F644F72B21D9F8004BD723 /* ContentView.swift */,
+				52F645202B21DA3D004BD723 /* ParentToDistantChildView.swift */,
+				52F645222B21DFF8004BD723 /* ChildToDistantParentView.swift */,
+				52F645242B220217004BD723 /* ChildToDirectParentCallbackView.swift */,
+				52F645262B2203F5004BD723 /* ChildToDirectParentBindingView.swift */,
+				52F645282B2205E2004BD723 /* ParentToDirectChildView.swift */,
+				52F6452A2B2207A6004BD723 /* BetweenChildrenView.swift */,
 				52F644F92B21D9FA004BD723 /* Assets.xcassets */,
 				52F644FB2B21D9FA004BD723 /* Preview Content */,
 			);
@@ -258,7 +276,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F644F82B21D9F8004BD723 /* ContentView.swift in Sources */,
+				52F645292B2205E2004BD723 /* ParentToDirectChildView.swift in Sources */,
+				52F6452B2B2207A6004BD723 /* BetweenChildrenView.swift in Sources */,
+				52F645272B2203F5004BD723 /* ChildToDirectParentBindingView.swift in Sources */,
+				52F645232B21DFF8004BD723 /* ChildToDistantParentView.swift in Sources */,
+				52F645252B220217004BD723 /* ChildToDirectParentCallbackView.swift in Sources */,
 				52F644F62B21D9F8004BD723 /* ViewCommunicationPatternsSwiftUIApp.swift in Sources */,
+				52F645212B21DA3D004BD723 /* ParentToDistantChildView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
