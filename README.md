@@ -18,3 +18,25 @@ Example app demonstrating the different communication patterns in SwiftUI.
 - `@EnvironmentObject` declares dependency on some shared data — data that’s visible to all views in a sub-tree of the app. It’s a convenient way to pass data indirectly instead of passing data from parent view to child to grandchild, especially if the in-between child view doesn’t need it.
 
 There are also default `@EnvironemtValues` that come built in, such as `.dismiss`/`.presented` used for sheets, `.colorSheme` used for light & dark mode, `.isHighlighted` and `.isEnabled` used with cells etc...
+
+---
+
+
+**ObservedObject**
+
+Used on non value type like `class`.
+
+How to create ObservableObject dependency.
+
+- @ObservedObject
+- @StateObject
+- @EnvironmentObject
+
+Binding can be derived from `State` and `ObservableObject` using `$` prefix.
+
+`@ObseravleObject` creates data dependcy, @StateObject ties an `@ObservableObject` to view life-cycle and is 'source of truth', `@EnvironmentObject` adds ergonmics to help access `@ObservableObject` e.g. when child views are far away from eachother.
+
+
+---
+
+![property-wrappers-use](imgs/property-wrappers-use.png)

@@ -27,14 +27,14 @@ struct ObserveEnvironmentalObjectView: View {
         VStack(spacing: 40) {
           NavigationLink {
             NotesOverviewView()
-              .environmentObject(store)
+              .environmentObject(store) // set environment object, note it only works on below heirarchy and means can pass without init on view
           } label: {
             Text("Show Number of Notes")
           }
 
           NavigationLink {
             NotesListView()
-              .environmentObject(store)
+              .environmentObject(store) // set environment object, note it only works on below heirarchy and means can pass without init on view
           } label: {
             Text("See All")
           }
