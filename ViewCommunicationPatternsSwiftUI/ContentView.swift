@@ -43,3 +43,5 @@ struct ContentView_Previews: PreviewProvider {
     ContentView()
   }
 }
+
+// https://jaredsinclair.com/2020/05/07/swiftui-cheat-sheet.html

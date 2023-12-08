@@ -5,7 +5,7 @@ struct ChildToDirectParentBindingView: View {
 
   var body: some View {
     VStack {
-      ChildViewOneView(isBackgroundYellow: $isBackgroundYellow)
+      ChildViewOneView(isBackgroundYellow: $isBackgroundYellow) // $ symbol gives access to projectedValue which is a binding
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding()
     }

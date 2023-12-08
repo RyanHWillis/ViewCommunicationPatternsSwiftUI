@@ -5,12 +5,15 @@ struct Note: Identifiable {
   let title: String
 }
 
+// ObservableObject is the dats surface needed for the view, usually populated by a data model.
 class NotesStore: ObservableObject {
-  @Published var notes: [Note] = []
+  @Published var notes: [Note] = [] // marking as @Published will mean the view will reload when the values changes.
 }
 
 struct ObserveEnvironmentalObjectView: View {
-  @StateObject var store = NotesStore()
+  @StateObject var store = NotesStore() // source of truth
+
+  @AppStorage("isToggleOn") private var isToggleOn = false // stuff gets stored in user defaults
 
   var body: some View {
     NavigationStack {
@@ -34,6 +37,10 @@ struct ObserveEnvironmentalObjectView: View {
               .environmentObject(store)
           } label: {
             Text("See All")
+          }
+
+          Toggle(isOn: $isToggleOn) {
+            Text("Test Toggle")
           }
         }
         .padding()
