@@ -6,6 +6,7 @@ struct Note: Identifiable {
 }
 
 // ObservableObject is the dats surface needed for the view, usually populated by a data model.
+
 class NotesStore: ObservableObject {
   @Published var notes: [Note] = [] // marking as @Published will mean the view will reload when the values changes.
 }
@@ -78,8 +79,32 @@ struct NotesListView: View {
 }
 
 struct ObserveEnvironmentalObjectView_Previews: PreviewProvider {
+  @AppStorage("isToggleOn") static var isToggleOn: Bool?
+
   static var previews: some View {
-    ObserveEnvironmentalObjectView()
+    isToggleOn = nil
+    return ObserveEnvironmentalObjectView()
       .environmentObject(NotesStore())
   }
 }
+
+
+// You can now simplify this!
+
+/*
+
+ // Remove conformance of ObservableObject, remove @published, and observe new macro
+
+ @Obseravle
+ class NotesStore {
+   var notes: [Note] = []
+ }
+
+ // remove @ObservedObject if you have it in front of a var (if passed in via init), and @EnvironmentObject to @Environment if using that.
+
+ struct NotesListView: View {
+   @Environment var store: NotesStore
+   ...
+
+ */
+
