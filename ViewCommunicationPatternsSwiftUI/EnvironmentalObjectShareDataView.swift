@@ -97,14 +97,54 @@ struct ObserveEnvironmentalObjectView_Previews: PreviewProvider {
 
  @Obseravle
  class NotesStore {
-   var notes: [Note] = []
+ var notes: [Note] = []
  }
 
  // remove @ObservedObject if you have it in front of a var (if passed in via init), and @EnvironmentObject to @Environment if using that.
 
  struct NotesListView: View {
-   @Environment var store: NotesStore
-   ...
+ @Environment var store: NotesStore
+ ...
 
  */
 
+@Observable // ONLY iOS17
+class User {
+  var firstName = "Bilbo"
+  var lastName = "Baggins"
+}
+
+// because this is a class, a reference type means a new value for the objected is not created like with a struct value type - which is recreated each time allowing swiftui to pick up the change.
+
+struct ObservableMacroView: View {
+  @State private var user = User()
+
+  var body: some View {
+    VStack {
+      Text("Your name is \(user.firstName) \(user.lastName).")
+
+      TextField("First name", text: $user.firstName)
+      TextField("Last name", text: $user.lastName)
+
+      ObservableMacroChildView(user: user)
+    }
+  }
+}
+
+struct ObservableMacroChildView: View {
+  var user: User // make @Binding for read/write with textfield in here.
+
+  var body: some View {
+    VStack {
+      Text(user.firstName)
+//      TextField("first name again?", text: $user.firstName)
+//        .background(.red)
+    }
+  }
+}
+
+struct ObservableMacroView_Previews: PreviewProvider {
+  static var previews: some View {
+    ObservableMacroView()
+  }
+}
